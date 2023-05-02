@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="resultado">Álcool vale mais a pena</string>
+    <string name="prompt_gasolina_alcool">Gasolina ou álcool?</string>
+    <string name="gasolina_hint">Preço da gasolina</string>
+    <string name="alcool_hint">Preço do álcool</string>
+    <string name="text_switch_gasolina">75%</string>
+    <string name="valor_alcool">70%</string>
+    <string name="calcular_button_text">Calcular</string>
+</resources>

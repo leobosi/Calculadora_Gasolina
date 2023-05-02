@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BACKGROUND"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/TEXTCOLOR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_gasolina_alcool"
+            android:gravity="center"
+            android:textSize="24sp" />
+
+        <EditText
+            style="@style/TEXTCOLOR"
+            android:id="@+id/gasolinaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/gasolina_hint"
+            android:textColorHint="@color/grey"
+            android:maxLength="7"
+            android:imeOptions="actionNext"
+            android:required="true"
+            android:autofillHints="gasolina"
+            />
+
+        <EditText
+            android:id="@+id/alcoolEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/alcool_hint"
+            android:textColorHint="@color/grey"
+            android:maxLength="7"
+            android:imeOptions="actionNext"
+            android:required="true"
+            android:autofillHints="alcool"
+            />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchCombustivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textOff="@string/text_switch_gasolina"
+            android:textOn="@string/valor_alcool"
+            />
+
+        <Button
+            style="@style/BUTTON"
+            android:id="@+id/calcularButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calcular_button_text"
+             />
+
+        <TextView
+            android:id="@+id/valeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
